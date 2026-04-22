@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>😈</title>
+
+<style>
+body {
+  background: black;
+  color: red;
+  text-align: center;
+  font-family: monospace;
+  margin-top: 100px;
+}
+</style>
+
+</head>
+<body>
+
+<h1 id="text">جاري اختراق جهازك...</h1>
+
+<script>
+let text = document.getElementById("text");
+
+// يهز الجوال
+if (navigator.vibrate) {
+  navigator.vibrate([500, 300, 500, 300, 1000]);
+}
+
+// يغير النص
+setTimeout(() => {
+  text.innerText = "📡 يتم سحب الصور...";
+}, 2000);
+
+setTimeout(() => {
+  text.innerText = "🚨 تم اختراقك بالكامل!";
+}, 4000);
+
+setTimeout(() => {
+  text.innerText = "😂 أمزح معك كسمك ههه ";
+  document.body.style.color = "white";
+}, 6000);
+</script>
+
+</body>
+</html>
