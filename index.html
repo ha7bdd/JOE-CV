@@ -1,159 +1,46 @@
 <!DOCTYPE html>
-
-<html lang="ar">
+<html>
 <head>
 <meta charset="UTF-8">
-<title>السيرة الذاتية</title>
+<title>😈</title>
 
 <style>
 body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma;
-    direction: rtl;
-    background: #eef3f8;
-}
-
-/* Header */
-.header {
-    background: linear-gradient(135deg, #0f4c75, #3282b8);
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
-}
-
-.header h1 {
-    margin: 10px 0 5px;
-}
-
-.header p {
-    margin: 0;
-    opacity: 0.9;
-}
-
-/* Main Layout */
-.container {
-    max-width: 1000px;
-    margin: -40px auto 30px;
-    padding: 20px;
-}
-
-/* Card Style */
-.card {
-    background: white;
-    border-radius: 15px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-}
-
-/* Grid */
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-/* Titles */
-h2 {
-    margin-top: 0;
-    border-right: 5px solid #3282b8;
-    padding-right: 10px;
-}
-
-/* Text */
-p {
-    line-height: 1.8;
-    margin: 5px 0;
-}
-
-/* Image */
-.profile {
-    display: flex;
-    justify-content: center;
-    margin-top: -60px;
-}
-
-.profile img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 5px solid white;
-}
-
-/* Responsive */
-@media(max-width: 700px) {
-    .grid {
-        grid-template-columns: 1fr;
-    }
+  background: black;
+  color: red;
+  text-align: center;
+  font-family: monospace;
+  margin-top: 100px;
 }
 </style>
 
 </head>
-
 <body>
 
-<div class="header">
-<h1>السيرة الذاتية</h1>
-<p>التقديم على وزارة الصحة</p>
-</div>
+<h1 id="text">جاري اختراق جهازك...</h1>
 
-<div class="profile">
-</div>
+<script>
+let text = document.getElementById("text");
 
-<div class="container">
+// يهز الجوال
+if (navigator.vibrate) {
+  navigator.vibrate([500, 300, 500, 300, 1000]);
+}
 
-<div class="card">
-<h2>المعلومات الشخصية</h2>
-<p><strong>الاسم:</strong> [جو]</p>
-<p><strong>العمر:</strong> [19]</p>
-</div>
+// يغير النص
+setTimeout(() => {
+  text.innerText = "📡 يتم سحب الصور...";
+}, 2000);
 
-<div class="card">
-<h2>نبذة</h2>
-<p>
-شخص ملتزم وطموح أسعى دائماً لتطوير نفسي واكتساب الخبرات وأطمح للانضمام إلى وزارة الصحة لخدمة المجتمع والتعامل مع الحالات الحرجة بكفاءة.
-</p>
-</div>
+setTimeout(() => {
+  text.innerText = "🚨 تم اختراقك بالكامل!";
+}, 4000);
 
-<div class="grid">
-
-<div class="card">
-<h2>الخبرات</h2>
-<p>
-بدأت في مجال النظافة وتعلمت الالتزام والانضباط ثم عملت في شركة شحن واكتسبت خبرة في تنظيم الطلبات والتعامل مع العملاء وبعدها في الهنقر كنت مسؤول عن ترتيب الكراتين وتنظيم المخزون.
-</p>
-</div>
-
-<div class="card">
-<h2>المهارات</h2>
-<p>
-العمل تحت الضغط سرعة التعلم الالتزام بالقوانين التواصل الجيد العمل الجماعي
-</p>
-</div>
-
-<div class="card">
-<h2>الخبرة الطبية</h2>
-<p>
-معرفة بأساسيات الإسعافات الأولية مثل التعامل مع النزيف والإنعاش القلبي (CPR) والتصرف في الحالات الطارئة.
-</p>
-</div>
-
-<div class="card">
-<h2>سبب التقديم</h2>
-<p>
-أطمح للانضمام لوزارة الصحة للمساهمة في إنقاذ الأرواح وخدمة المجتمع والعمل ضمن فريق احترافي.
-</p>
-</div>
-
-</div>
-
-<div class="card">
-<h2>التواجد والسجل</h2>
-<p><strong>التواجد:</strong> 6 إلى 9 ساعات يومياً</p>
-<p><strong>السجل:</strong> نظيف</p>
-</div>
-
-</div>
+setTimeout(() => {
+  text.innerText = "😂 أمزح معك كسمك ههه ";
+  document.body.style.color = "white";
+}, 6000);
+</script>
 
 </body>
 </html>
